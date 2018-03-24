@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22B570E920667D6900C3FAF3 /* RWFlavourPick.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B570E720667D6900C3FAF3 /* RWFlavourPick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B570F02066820B00C3FAF3 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B570EF2066820B00C3FAF3 /* Main.swift */; };
 		A765E61636343ED290C3C36B /* Pods_RWFlavourPick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86021DBB13391C80CF24B41 /* Pods_RWFlavourPick.framework */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +16,7 @@
 		22B570E420667D6900C3FAF3 /* RWFlavourPick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWFlavourPick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B570E720667D6900C3FAF3 /* RWFlavourPick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWFlavourPick.h; sourceTree = "<group>"; };
 		22B570E820667D6900C3FAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B570EF2066820B00C3FAF3 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		23CFCCF9ED243AA2AC99F858 /* Pods-RWFlavourPick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWFlavourPick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWFlavourPick/Pods-RWFlavourPick.debug.xcconfig"; sourceTree = "<group>"; };
 		A86021DBB13391C80CF24B41 /* Pods_RWFlavourPick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RWFlavourPick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F11D3C908F0EA70721EA5E /* Pods-RWFlavourPick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWFlavourPick.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWFlavourPick/Pods-RWFlavourPick.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				22B570E720667D6900C3FAF3 /* RWFlavourPick.h */,
+				22B570EF2066820B00C3FAF3 /* Main.swift */,
 				22B570E820667D6900C3FAF3 /* Info.plist */,
 			);
 			path = RWFlavourPick;
@@ -121,6 +124,7 @@
 				TargetAttributes = {
 					22B570E320667D6900C3FAF3 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B570F02066820B00C3FAF3 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23CFCCF9ED243AA2AC99F858 /* Pods-RWFlavourPick.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -329,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amondo.RWFlavourPick;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7F11D3C908F0EA70721EA5E /* Pods-RWFlavourPick.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
