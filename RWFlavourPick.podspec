@@ -8,7 +8,7 @@ s.summary = "RWFlavourPick lets a user select an ice cream flavor."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "0.1.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -21,10 +21,10 @@ s.author = { "[Your Name Goes Here]" => "[Your_Email@Your_Email_Domain.com]" }
 
 
 # 5 - Replace this URL with your own Github page's URL (from the address bar)
-s.homepage = "https://www.newsscanner.co.uk"
+s.homepage = "https://github.com/twhiting6"
 
 # For example,
-# s.homepage = "https://github.com/JRG-Developer/RWPickFlavor"
+# s.homepage = "https://github.com/twhiting6/testsdk"
 
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
